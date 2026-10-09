@@ -39,6 +39,14 @@ Runtime files:
 The human page explains the skill. The LLM-facing files execute it. Human prose
 never becomes routing or permission authority.
 
+## Standalone use
+
+Clone the repository and place it where your host loads skills. The package has no
+dependencies, and `python3 -m unittest discover -s tests` verifies it. Update with
+`git pull --ff-only` after reading `CHANGELOG.md`. The version is in `VERSION`. Roll back
+with `git revert` or a checkout of an earlier tag. Skills AI integration is optional;
+this repository needs nothing from it.
+
 ## Details
 
 ## Purpose
